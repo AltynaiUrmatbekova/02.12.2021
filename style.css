@@ -4,13 +4,53 @@ body {
   * {
     box-sizing: border-box;
   }
+  .main-nav {
+      display: flex;
+      }
+      .main-nav ul {
+          display: flex;
+          justify-content: space-between;
+      }
+      .main-nav ul li {
+          list-style-type: none;
+          padding: 1rem;
+      }
+      .main-nav ul li a {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .active {
+          border-bottom: 2px solid black;
+      }
+      .log-in {
+          padding: 5px;
+          border-radius: 5px;
+          background-color: white;
+          border-color: rgb(199, 183, 183);
+          font-size: large;
+      }
+      .sign-up {
+          background-color: rgb(156, 156, 240);
+          color: white;
+          border: none;
+          padding: 15px;
+          border-radius: 15px;
+          font-size: large;
+      }
+      .nav-grey {
+          background-color: rgb(131, 93, 93);
+          padding: 2rem;
+      }
+      div {
+          text-align: center;
+      }
   .row {
     display: flex;
     flex-wrap: wrap;
   }
   .container {
     width: 980px;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
   }
   .col-auto {
@@ -77,4 +117,16 @@ body {
   }
   .example-3:hover {
       transform: translate(50%);
+  }
+  main {
+     text-align: center;
+  }
+  .btn {
+     text-align: center;
+     border-radius: 30px;
+     padding: 15px;
+  }
+  section {
+      text-align: center;
+      padding-top: 50px;
   }
